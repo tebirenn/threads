@@ -1,0 +1,76 @@
+.search-main-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.search-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 38%;
+    box-sizing: border-box;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    background-color: #fafafa;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+.search-container svg {
+    width: 16px;
+    filter: invert(84%) sepia(0%) saturate(3706%) hue-rotate(22deg) brightness(95%) contrast(74%);
+}
+.search-container input {
+    width: calc(100% - 16px);
+    height: 36px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+    font-size: 14px;
+}
+.search-container input::placeholder {
+    color: #b8b8b8;
+}
+.acc-info-left {
+    margin-left: 12px;
+    width: 100%;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.15);
+}
+.acc-main-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.acc-main-info p {
+    margin: 0;
+    font-size: 15px;
+}
+.acc-main-info button {
+    background-color: #fff;
+    font-weight: 700;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.search-accounts {
+    padding-top: 30px;
+    width: 100%;
+}
+.acc-info-left .acc-username {
+    font-weight: 600;
+}
+.acc-info-left .acc-name {
+    color: #999999;
+}
+.account--item {
+    display: flex;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.account-avatar-wrapper img {
+    width: 36px;
+}

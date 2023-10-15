@@ -6,10 +6,10 @@ import { Injectable } from '@angular/core';
 export class DataService {
   private myData: any = {
     accounts: [
-      { username: 'rusyaless', name: 'Руся' },
-      { username: 'tebirenn', name: 'Алан' },
-      { username: 'adeem', name: 'Адема' },
-      { username: 'qqHomie', name: 'Нурсултан' },
+      { username: 'rusyaless', name: 'Руся', subs: 0 },
+      { username: 'tebirenn', name: 'Алан', subs: 0 },
+      { username: 'adeem', name: 'Адема', subs: 0 },
+      { username: 'qqHomie', name: 'Нурсултан', subs: 0 },
     ]
   };
   

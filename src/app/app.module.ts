@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { ProfileComponent } from './profile/profile.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { SearchComponent } from './search/search.component';
+import { NewBranchComponent } from './new-branch/new-branch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    ProfileComponent,
+    NotificationsComponent,
+    SearchComponent,
+    NewBranchComponent
   ],
   imports: [
     BrowserModule,

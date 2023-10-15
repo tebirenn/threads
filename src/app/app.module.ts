@@ -10,6 +10,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { SearchComponent } from './search/search.component';
 import { NewBranchComponent } from './new-branch/new-branch.component';
 import { LoginComponent } from './login/login.component';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { LoginComponent } from './login/login.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

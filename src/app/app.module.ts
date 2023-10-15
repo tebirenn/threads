@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { SearchComponent } from './search/search.component';
 import { NewBranchComponent } from './new-branch/new-branch.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NewBranchComponent } from './new-branch/new-branch.component';
     ProfileComponent,
     NotificationsComponent,
     SearchComponent,
-    NewBranchComponent
+    NewBranchComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

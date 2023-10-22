@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,7 +10,8 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { SearchComponent } from './search/search.component';
 import { NewBranchComponent } from './new-branch/new-branch.component';
 import { LoginComponent } from './login/login.component';
-import { DataService } from './data.service';
+import { PostComponent } from './post/post.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -22,14 +22,15 @@ import { DataService } from './data.service';
     NotificationsComponent,
     SearchComponent,
     NewBranchComponent,
-    LoginComponent
+    LoginComponent,
+    PostComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    CommonModule,
-  ],
-  providers: [DataService],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgOptimizedImage
+    ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

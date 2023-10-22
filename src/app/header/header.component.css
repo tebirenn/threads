@@ -33,6 +33,7 @@
     border-radius: 8px;
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 .header-nav-bar a.selected {
     filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(304deg) brightness(97%) contrast(103%);

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class NewBranchComponent {
 
+  closeBranchModal(event: Event) {
+    const modal = event.target as HTMLElement;
+    modal.style.opacity = '0';
+    modal.style.zIndex = '-1';
+  }
 }

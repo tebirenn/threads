@@ -12,11 +12,24 @@ export class DataService {
       { username: 'qqHomie', name: 'Нурсултан', subs: 0 },
     ]
   };
-  
+
+  private posts: any = {
+    posts: [
+      { username: 'rusyaless', description: 'Для тех кто думает что роботизация это что-то далекое и не скорое.\n' +
+          'Amazon уже вовсю внедряет это на своих складах.', likes: 104 },
+      { username: 'tebirenn', description: 'SLAM MAKHACHEV HEAD KICK KOs ALEX VOLKANOVSKI 🤯', likes: 105 },
+      { username: 'adeem', description: 'Mcgregor wants to see Paulo vs Khamzat !', likes: 2434 },
+      { username: 'qqHomie', description: 'Denis Bouanga is the 2023 MLS Golden Boot winner 👟', likes: 1245},
+    ]
+  };
+
   getData() {
     return this.myData;
   }
 
+  getPosts() {
+    return this.posts;
+  }
   addData(item: any) {
     this.myData.push(item);
   }

@@ -1,0 +1,21 @@
+.post__body {
+  display: flex;
+  gap: 10px;
+  max-width: 70%;
+  margin-left: 20%;
+  justify-content: center;
+  border-bottom: 2px solid #cccccc;
+}
+
+.post__avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+.post__stats {
+  display: flex;
+  color: gray;
+  gap: 10px;
+}

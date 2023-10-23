@@ -18,8 +18,9 @@ export class HeaderComponent implements AfterViewInit {
   openBranchModal() {
     if (this.modal) {
       const wrapper = this.modal.querySelector('#branch-wrapper');
-      wrapper.style.opacity = '1';
-      wrapper.style.zIndex = '150';
+      // wrapper.style.opacity = '1';
+      // wrapper.style.zIndex = '150';
+      wrapper.classList.remove('branch-closed');
     }
   }
 }

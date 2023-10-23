@@ -9,13 +9,12 @@
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 150;
-    opacity: 0;
-    z-index: -1;
 }
 
 .branch-outer {
     text-align: center;
     width: 45%;
+    z-index: 151;
 }
 .branch-outer p {
     color: #fff;
@@ -107,4 +106,9 @@
     color: #fff;
     padding: 10px 20px;
     border: none;
+}
+
+.branch-closed {
+    opacity: 0;
+    z-index: -1;
 }

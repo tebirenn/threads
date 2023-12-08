@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,9 @@ import { NewBranchComponent } from './new-branch/new-branch.component';
 import { LoginComponent } from './login/login.component';
 import { PostComponent } from './post/post.component';
 import {NgOptimizedImage} from "@angular/common";
+import { RegistrComponent } from './registr/registr.component';
+import { FormsModule } from '@angular/forms';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,20 @@ import {NgOptimizedImage} from "@angular/common";
     SearchComponent,
     NewBranchComponent,
     LoginComponent,
-    PostComponent
+    PostComponent,
+    RegistrComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        NgOptimizedImage
+        NgOptimizedImage,
+        FormsModule,
+        ServiceWorkerModule.register('ngsw-worker.js', {
+          enabled: !isDevMode(),
+          // Register the ServiceWorker as soon as the application is stable
+          // or after 30 seconds (whichever comes first).
+          registrationStrategy: 'registerWhenStable:30000'
+        })
     ],
   providers: [],
   bootstrap: [AppComponent]
